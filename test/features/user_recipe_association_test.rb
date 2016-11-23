@@ -13,7 +13,7 @@ class ListRecipesTest < ActionDispatch::IntegrationTest
       # is it the right user?
       assert page.has_content? user.first_name
 
-      # is the right recipe listed?
+      # is it the right recipe?
       recipe_title = recipe_titles(:one)
       #assert page.has_content?  recipe_title.name
 
