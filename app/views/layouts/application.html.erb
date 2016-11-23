@@ -9,6 +9,19 @@
   </head>
 
   <body>
+  	<div class="nav">
+			<ul class="nav-list">
+				<li>
+					<%= link_to "user", :controller => 'users', :action => 'index' %>
+				</li>
+				<li>
+					<%= link_to "recipe", :controller => 'recipe_titles', :action => 'index' %>
+				</li>
+			</ul>
+
+			<hr>
+		</div>
+
     <%= yield %>
   </body>
 </html>
