@@ -1,3 +1,3 @@
 # README
 
-  [![Build Status](https://travis-ci.org/tjahjana/customer-account-management.svg?branch=master)](https://travis-ci.org/tjahjana/customer-account-management)
+  [![Build Status](https://travis-ci.org/tjahjana/recipe.svg?branch=master)](https://travis-ci.org/tjahjana/recipe)
