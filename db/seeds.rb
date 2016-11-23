@@ -6,8 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.delete_all
-User.create(first_name: "Tito", last_name: "Mueller")
+user1 = User.create(first_name: "Tito", last_name: "Mueller")
+
 
 RecipeTitle.delete_all
-RecipeTitle.create(name: "Chili con Carne", category: "Fleisch", ingredient: "Rindfleisch, Bohnen")
-RecipeTitle.create(name: "Wrap", category: "Gemuese", ingredient: "Mozzarella, Salat, Pfannkuchen")
+#RecipeTitle.create(name: "Chili con Carne", category: "Fleisch", ingredient: "Rindfleisch, Bohnen")
+#RecipeTitle.create(name: "Wrap", category: "Gemuese", ingredient: "Mozzarella, Salat, Pfannkuchen")
+recipeTitle1 = user1.recipe_titles.create(name: "Chili con Carne", category: "Fleisch", ingredient: "Rindfleisch, Bohnen")
+recipeTitle2 = user1.recipe_titles.create(name: "Wrap", category: "Gemuese", ingredient: "Mozzarella, Salat, Pfannkuchen")
