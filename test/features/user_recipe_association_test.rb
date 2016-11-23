@@ -14,10 +14,10 @@ class ListRecipesTest < ActionDispatch::IntegrationTest
       assert page.has_content? user.first_name
 
       # is the right recipe listed?
+      recipe_title = recipe_titles(:one)
       #assert page.has_content?  recipe_title.name
-      #recipe_title = recipe_titles(:one)
 
       # test association in database
-      #assert_equal user.id, recipe_title.user_id
+      assert_equal user.id, recipe_title.user_id
   end
 end
